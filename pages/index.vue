@@ -15,7 +15,7 @@
           Documentation
         </a>
         <a
-          href="https://github.com/nuxt/nuxt.js"
+          href="https://github.com/EmmanuelRoberson/ToDoApp"
           target="_blank"
           rel="noopener noreferrer"
           class="button--grey"
@@ -23,6 +23,14 @@
           GitHub
         </a>
       </div>
+    </div>
+    <div>
+      <ul class = "ToDo List">
+        <li class="list-group-item">Finish ToDo List</li>
+        <li class="list-group-item">Item number 2</li>
+        <li class="list-group-item">Item number 3</li>
+        <li class="list-group-item">Item number 4</li>
+      </ul>
     </div>
   </div>
 </template>
