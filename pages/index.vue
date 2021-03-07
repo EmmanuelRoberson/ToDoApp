@@ -1,10 +1,32 @@
 <template>
   <div class="container">
     <div>
-      <Logo />
+  
       <h1 class="title">
-        ToDo-App
+         ToDo-App 
       </h1>
+
+      <div class="input-group mb-3">
+        <div class="">
+          <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
+        </div>
+        <input type="text" class="form-control" aria-label="Text input with checkbox">
+      </div>
+
+      <div class="input-group mb-3">
+        <div class="">
+          <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
+        </div>
+        <input type="text" class="form-control" aria-label="Text input with checkbox">
+      </div>
+
+      <div class="input-group mb-3">
+        <div class="">
+          <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
+        </div>
+        <input type="text" class="form-control" aria-label="Text input with checkbox">
+      </div>
+
       <div class="links">
         <a
           href="https://nuxtjs.org/"
@@ -24,14 +46,6 @@
         </a>
       </div>
     </div>
-    <div>
-      <ul class = "ToDo List">
-        <li class="list-group-item">Finish ToDo List</li>
-        <li class="list-group-item">Item number 2</li>
-        <li class="list-group-item">Item number 3</li>
-        <li class="list-group-item">Item number 4</li>
-      </ul>
-    </div>
   </div>
 </template>
 
@@ -39,6 +53,18 @@
 import Vue from 'vue'
 
 export default Vue.extend({})
+</script>
+
+<script>
+export default {
+  date() {
+    return {
+      list: {
+        item: {} ,
+      }
+    };
+  }
+}
 </script>
 
 <style>
