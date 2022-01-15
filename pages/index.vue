@@ -1,30 +1,24 @@
 <template>
   <div class="container">
     <div>
-  
       <h1 class="title">
-         ToDo-App 
+        ToDo-App
       </h1>
 
       <div class="input-group mb-3">
         <div class="">
-          <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
+          <input
+            class="form-check-input mt-0"
+            type="checkbox"
+            value=""
+            aria-label="Checkbox for following text input"
+          />
         </div>
-        <input type="text" class="form-control" aria-label="Text input with checkbox">
-      </div>
-
-      <div class="input-group mb-3">
-        <div class="">
-          <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
-        </div>
-        <input type="text" class="form-control" aria-label="Text input with checkbox">
-      </div>
-
-      <div class="input-group mb-3">
-        <div class="">
-          <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
-        </div>
-        <input type="text" class="form-control" aria-label="Text input with checkbox">
+        <input
+          type="text"
+          class="form-control"
+          aria-label="Text input with checkbox"
+        />
       </div>
 
       <div class="links">
@@ -50,21 +44,18 @@
 </template>
 
 <script lang="ts">
-import Vue from 'vue'
+import Vue from "vue";
+import * as _ from "lodash";
 
-export default Vue.extend({})
-</script>
-
-<script>
 export default {
-  date() {
+  data() {
     return {
-      list: {
-        item: {} ,
-      }
+      tasks: [""]
     };
+  },
+  methods: { 
   }
-}
+};
 </script>
 
 <style>
@@ -78,16 +69,8 @@ export default {
 }
 
 .title {
-  font-family:
-    'Quicksand',
-    'Source Sans Pro',
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    'Helvetica Neue',
-    Arial,
-    sans-serif;
+  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   display: block;
   font-weight: 300;
   font-size: 100px;
